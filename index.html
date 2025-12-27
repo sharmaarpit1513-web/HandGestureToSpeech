@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Language Recognition & Speech</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- MediaPipe (Google) -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+</head>
+
+<body>
+
+<header>
+  <h1>🤟 Sign Language Recognition</h1>
+  <p>Real-time Sign to Speech Translation</p>
+</header>
+
+<div class="controls">
+  <label>
+    Language:
+    <select id="language">
+      <option value="en">English</option>
+      <option value="hi">Hindi</option>
+    </select>
+  </label>
+</div>
+
+<div class="container">
+  <video id="video" autoplay></video>
+  <canvas id="canvas"></canvas>
+</div>
+
+<div class="output">
+  <h2 id="gesture">Detected Sign: —</h2>
+  <p id="status">Status: Waiting for hand</p>
+</div>
+
+<footer>
+  AI-based Sign Language Interpreter
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

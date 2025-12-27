@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 15px;
+  background: #020617;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+.controls {
+  margin: 15px;
+}
+
+select {
+  padding: 6px;
+  font-size: 16px;
+}
+
+.container {
+  position: relative;
+  width: 640px;
+  margin: 20px auto;
+}
+
+video, canvas {
+  width: 640px;
+  height: 480px;
+  border-radius: 12px;
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.output {
+  margin-top: 20px;
+}
+
+#gesture {
+  color: #22c55e;
+  font-size: 26px;
+}
+
+footer {
+  margin-top: 30px;
+  padding: 10px;
+  background: #020617;
+  font-size: 14px;
+}
